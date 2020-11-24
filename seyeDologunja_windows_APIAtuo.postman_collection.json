@@ -1,0 +1,308 @@
+{
+	"info": {
+		"_postman_id": "67555884-ab3c-421d-bbd9-72d9b56388da",
+		"name": "seyeDologunja_windows_APIAtuo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://docs.postman-echo.com",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f52fb794-49b4-43b9-a253-e9de988ddc60",
+						"exec": [
+							"// Test 1: Status code is 200 confirmation",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Test 2: Code string is ok confirmation",
+							"pm.test(\"Status code name has OK string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});",
+							"",
+							"// Test 3: response time confirmation",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(300000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://docs.postman-echo.com",
+					"protocol": "https",
+					"host": [
+						"docs",
+						"postman-echo",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{reqBaseUrl}}/api/register",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "08d80012-ec23-4058-9df5-758f876fa845",
+						"exec": [
+							"",
+							"postman.setEnvironmentVariable(\"header_server\", pm.response.headers.get('Server'));",
+							"",
+							"pm.environment.set(\"letter_server\", pm.response.headers.get('Server'));",
+							"",
+							"// Test 1: Status code is 200 confirmation",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Test 2: Code string is ok confirmation",
+							"pm.test(\"Status code name has OK string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});",
+							"",
+							"// Test 3: response time confirmation",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(300000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"eve.holt@reqres.in\",\n    \"password\": \"pistol\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{reqBaseUrl}}/api/register",
+					"host": [
+						"{{reqBaseUrl}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://reqres.in/api/users/2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2763a9c4-0714-449a-8a6f-5dd0ab6c3824",
+						"exec": [
+							"// Test 1: Status code is 204 confirmation",
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});",
+							"",
+							"// Test 2: Code string is \"No Content\" confirmation",
+							"pm.test(\"Status code name has No Content string\", function () {",
+							"    pm.response.to.have.status(\"No Content\");",
+							"});",
+							"",
+							"// Test 3: response time confirmation",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(300000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users/2",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://demo.fusio.project.org/index.php/todo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "edb20308-ac48-4a63-b729-352708796765",
+						"exec": [
+							"",
+							"postman.setEnvironmentVariable(\"header_server\", pm.response.headers.get('Server'));",
+							"",
+							"pm.environment.set(\"letter_server\", pm.response.headers.get('Server'));",
+							"",
+							"// Test 1: Status code is 200 confirmation",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Test 2: Code string is ok confirmation",
+							"pm.test(\"Status code name has OK string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});",
+							"",
+							"// Test 3: response time confirmation",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(300000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.fusio-project.org/index.php/todo",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"fusio-project",
+						"org"
+					],
+					"path": [
+						"index.php",
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://demo.fusio-project.org/todo/?todo_id=2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8e5176a8-1415-4abb-b82f-c75883e758ca",
+						"exec": [
+							"",
+							"postman.setEnvironmentVariable(\"header_server\", pm.response.headers.get('Server'));",
+							"",
+							"pm.environment.set(\"letter_server\", pm.response.headers.get('Server'));",
+							"",
+							"// Test 1: Status code is 200 confirmation",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Test 2: Code string is ok confirmation",
+							"pm.test(\"Status code name has OK string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});",
+							"",
+							"// Test 3: response time confirmation",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(300000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.fusio-project.org/todo/?todo_id=2",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"fusio-project",
+						"org"
+					],
+					"path": [
+						"todo",
+						""
+					],
+					"query": [
+						{
+							"key": "todo_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://reqres.in/api/user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c36562d0-6308-41d3-9964-4f47bc717e79",
+						"exec": [
+							"// Test 1: Status code is 200 confirmation",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Test 2: Code string is ok confirmation",
+							"pm.test(\"Status code name has OK string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});",
+							"",
+							"// Test 3: response time confirmation",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(300000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/user",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

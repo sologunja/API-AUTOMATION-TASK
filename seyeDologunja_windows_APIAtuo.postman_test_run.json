@@ -1,0 +1,190 @@
+{
+	"id": "0a5aecd0-d26d-41e1-8285-611b8cde260e",
+	"name": "seyeDologunja_windows_APIAtuo",
+	"timestamp": "2020-11-24T00:15:10.895Z",
+	"collection_id": "67555884-ab3c-421d-bbd9-72d9b56388da",
+	"folder_id": 0,
+	"environment_id": "696c750a-573b-41d9-9399-b20f009c6eb6",
+	"totalPass": 12,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "4d442e53-1a17-4f14-8a5e-de7435a52f39",
+			"name": "https://docs.postman-echo.com",
+			"url": "https://docs.postman-echo.com/",
+			"time": 2424,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has OK string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has OK string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2424
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has OK string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "be74a25b-2b30-44eb-bb96-65f88f45cdfd",
+			"name": "{{reqBaseUrl}}/api/register",
+			"url": "https://reqres.in/api/register",
+			"time": 306,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has OK string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has OK string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				306
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has OK string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "18cadfa4-9cce-4a3d-ab84-809d5be97087",
+			"name": "https://reqres.in/api/users/2",
+			"url": "https://reqres.in/api/users/2",
+			"time": 227,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Status code name has No Content string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has No Content string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				227
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Status code name has No Content string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "22133fe4-52c0-4388-855f-37c6aece112d",
+			"name": "https://demo.fusio.project.org/index.php/todo",
+			"url": "https://demo.fusio-project.org/index.php/todo",
+			"time": 539,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has OK string": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has OK string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				539
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has OK string": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3496,
+	"collection": {
+		"requests": [
+			{
+				"id": "4d442e53-1a17-4f14-8a5e-de7435a52f39",
+				"method": "GET"
+			},
+			{
+				"id": "be74a25b-2b30-44eb-bb96-65f88f45cdfd",
+				"method": "POST"
+			},
+			{
+				"id": "18cadfa4-9cce-4a3d-ab84-809d5be97087",
+				"method": "DELETE"
+			},
+			{
+				"id": "22133fe4-52c0-4388-855f-37c6aece112d",
+				"method": "GET"
+			}
+		]
+	}
+}
